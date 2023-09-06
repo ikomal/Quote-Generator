@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:wght@200;300;400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background:linear-gradient(135deg,rgb(139, 130, 238),white); */
+    background-color: rgb(134, 130, 238);
+    font-family: 'Poppins', sans-serif;
+}
+.container
+{
+    width: 50%;
+    /* width: auto; */
+    min-height: 40%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 10rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: .5rem;
+    position: relative;
+
+}
+.container h2{
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    position: relative;
+    
+}
+.container h2::after{
+    content: '';
+    width: 6rem;
+    height: 6px;
+    background-color: rgb(134, 130, 238);
+    border-radius: .2rem;
+    position: absolute;
+    bottom: -1rem;
+    right: 24rem;
+    transform: translateX(50%);
+}
+.container p{
+    display: block;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+}
+.container p::after,.container p::before
+{
+    content: '"';
+}
+.container span{
+    display: block;
+    margin-top: 2rem;
+    position: absolute;
+    right: -18rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+.container span::before
+{
+    content: '';
+    background: rgb(134, 130, 238);
+    width:1.3rem ;
+    height: .2rem;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    /* left: 20rem;
+    bottom: .5rem; */
+}
+.button button{
+    background-color: rgb(134, 130, 238);
+    margin: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
